@@ -3,43 +3,49 @@ fetch("jogos.json")
 .then(jogos => {
 
     const proximoJogo = jogos.find(j => !j.resultado);
-    function iniciarContador(proximoJogo){
+function iniciarContador(proximoJogo){
 
-    const contador = document.getElementById("countdown");
+    const dataJogo = new Date(
+        `${proximoJogo.data}T${proximoJogo.hora}:00`
+    );
 
     function atualizar(){
 
         const agora = new Date();
 
-        const dataJogo = new Date(
-            `${proximoJogo.data}T${proximoJogo.hora}:00`
-        );
-
-        const diferenca = dataJogo.getTime() - agora.getTime();
+        const diferenca = dataJogo - agora;
 
         if(diferenca <= 0){
-
-            contador.innerHTML = "⚽ O jogo já começou!";
             return;
         }
 
-        const dias = Math.floor(
-            diferenca / (1000 * 60 * 60 * 24)
-        );
+        const dias =
+            Math.floor(diferenca / (1000 * 60 * 60 * 24));
 
-        const horas = Math.floor(
-            (diferenca / (1000 * 60 * 60)) % 24
-        );
+        const horas =
+            Math.floor((diferenca / (1000 * 60 * 60)) % 24);
 
-        const minutos = Math.floor(
-            (diferenca / (1000 * 60)) % 60
-        );
+        const minutos =
+            Math.floor((diferenca / (1000 * 60)) % 60);
 
-        contador.innerHTML =
-            `${dias} dias • ${horas} horas • ${minutos} minutos`;
+        const segundos =
+            Math.floor((diferenca / 1000) % 60);
+
+        document.getElementById("dias").textContent =
+            dias.toString().padStart(2,"0");
+
+        document.getElementById("horas").textContent =
+            horas.toString().padStart(2,"0");
+
+        document.getElementById("minutos").textContent =
+            minutos.toString().padStart(2,"0");
+
+        document.getElementById("segundos").textContent =
+            segundos.toString().padStart(2,"0");
     }
 
     atualizar();
+
     setInterval(atualizar, 1000);
 }
 
