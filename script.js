@@ -115,9 +115,9 @@ setInterval(atualizarContador, 1000);
                         <p><strong>Convocados:</strong></p>
 
                         <ul>
-                            ${jogo.convocados
-                                .map(c => `<li>${c}</li>`)
-                                .join("")}
+${(jogo.convocados || [])
+    .map(c => `<li>${c}</li>`)
+    .join("")}
                         </ul>
 
                         <br>
@@ -125,9 +125,9 @@ setInterval(atualizarContador, 1000);
                         <p><strong>Marcadores:</strong></p>
 
                         <ul>
-                            ${jogo.marcadores
-                                .map(m => `<li>⚽ ${m}</li>`)
-                                .join("")}
+${(jogo.marcadores || [])
+    .map(m => `<li>⚽ ${m}</li>`)
+    .join("")}
                         </ul>
 
                     </div>
