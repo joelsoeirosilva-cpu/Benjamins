@@ -8,6 +8,8 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     background:#0d0d0d;
     color:white;
+    max-width:700px;
+    margin:auto;
 }
 
 header{
@@ -17,7 +19,7 @@ header{
 
 .logo{
     width:120px;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 header h1{
@@ -26,7 +28,7 @@ header h1{
 }
 
 header p{
-    color:#bbb;
+    color:#aaa;
     margin-top:10px;
 }
 
@@ -36,15 +38,16 @@ section{
 
 h2{
     margin-bottom:15px;
+    color:#f1c40f;
 }
 
 .next-game-card,
 .jornada-card{
     background:#171717;
     border-left:5px solid #f1c40f;
+    border-radius:12px;
     padding:20px;
     margin-bottom:15px;
-    border-radius:12px;
 }
 
 .equipas{
@@ -54,25 +57,27 @@ h2{
 }
 
 .info{
+    color:#ccc;
     margin:6px 0;
-    color:#ddd;
 }
 
 .resultado{
-    font-size:1.8rem;
     color:#f1c40f;
+    font-size:2rem;
     font-weight:bold;
+    margin:10px 0;
 }
 
 button{
+    width:100%;
     background:#f1c40f;
     color:black;
     border:none;
     padding:12px;
     margin-top:10px;
     border-radius:8px;
-    cursor:pointer;
     font-weight:bold;
+    cursor:pointer;
 }
 
 .detalhes{
@@ -82,8 +87,21 @@ button{
     padding-top:15px;
 }
 
+.detalhes.active{
+    display:block;
+}
+
 footer{
-    padding:30px;
     text-align:center;
-    color:#999;
+    padding:30px;
+    color:#777;
+}
+
+ul{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+li{
+    margin-bottom:5px;
 }
