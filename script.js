@@ -3,57 +3,67 @@ fetch("jogos.json")
 .then(jogos => {
 
     const proximoJogo = jogos.find(j => !j.resultado);
-function iniciarContador(proximoJogo){
 
-    const dataJogo = new Date(
-        `${proximoJogo.data}T${proximoJogo.hora}:00`
-    );
+    function iniciarContador(proximoJogo){
 
-    function atualizar(){
+        const dataJogo = new Date(
+            `${proximoJogo.data}T${proximoJogo.hora}:00`
+        );
 
-        const agora = new Date();
+        function atualizar(){
 
-        const diferenca = dataJogo - agora;
+            const agora = new Date();
 
-        if(diferenca <= 0){
-            return;
+            const diferenca = dataJogo - agora;
+
+            if(diferenca <= 0){
+
+                document.getElementById("dias").textContent = "00";
+                document.getElementById("horas").textContent = "00";
+                document.getElementById("minutos").textContent = "00";
+                document.getElementById("segundos").textContent = "00";
+
+                return;
+            }
+
+            const dias = Math.floor(
+                diferenca / (1000 * 60 * 60 * 24)
+            );
+
+            const horas = Math.floor(
+                (diferenca / (1000 * 60 * 60)) % 24
+            );
+
+            const minutos = Math.floor(
+                (diferenca / (1000 * 60)) % 60
+            );
+
+            const segundos = Math.floor(
+                (diferenca / 1000) % 60
+            );
+
+            document.getElementById("dias").textContent =
+                dias.toString().padStart(2, "0");
+
+            document.getElementById("horas").textContent =
+                horas.toString().padStart(2, "0");
+
+            document.getElementById("minutos").textContent =
+                minutos.toString().padStart(2, "0");
+
+            document.getElementById("segundos").textContent =
+                segundos.toString().padStart(2, "0");
         }
 
-        const dias =
-            Math.floor(diferenca / (1000 * 60 * 60 * 24));
-
-        const horas =
-            Math.floor((diferenca / (1000 * 60 * 60)) % 24);
-
-        const minutos =
-            Math.floor((diferenca / (1000 * 60)) % 60);
-
-        const segundos =
-            Math.floor((diferenca / 1000) % 60);
-
-        document.getElementById("dias").textContent =
-            dias.toString().padStart(2,"0");
-
-        document.getElementById("horas").textContent =
-            horas.toString().padStart(2,"0");
-
-        document.getElementById("minutos").textContent =
-            minutos.toString().padStart(2,"0");
-
-        document.getElementById("segundos").textContent =
-            segundos.toString().padStart(2,"0");
+        atualizar();
+        setInterval(atualizar, 1000);
     }
 
-    atualizar();
-
-    setInterval(atualizar, 1000);
-}
-
     if(proximoJogo){
-    iniciarContador(proximoJogo);
 
         document.getElementById("proximoJogo").innerHTML = `
             <div class="next-game-card">
+
                 <h3>Jornada ${proximoJogo.jornada}</h3>
 
                 <div class="equipas">
@@ -62,11 +72,38 @@ function iniciarContador(proximoJogo){
                     ${proximoJogo.fora}
                 </div>
 
+                <div class="contador-jogo">
+
+                    <div class="contador-item">
+                        <span id="dias">00</span>
+                        <small>DIAS</small>
+                    </div>
+
+                    <div class="contador-item">
+                        <span id="horas">00</span>
+                        <small>HORAS</small>
+                    </div>
+
+                    <div class="contador-item">
+                        <span id="minutos">00</span>
+                        <small>MIN</small>
+                    </div>
+
+                    <div class="contador-item">
+                        <span id="segundos">00</span>
+                        <small>SEG</small>
+                    </div>
+
+                </div>
+
                 <div class="info">📅 ${proximoJogo.data}</div>
                 <div class="info">⏰ ${proximoJogo.hora}</div>
                 <div class="info">📍 ${proximoJogo.local}</div>
+
             </div>
         `;
+
+        iniciarContador(proximoJogo);
     }
 
     let html = "";
@@ -80,7 +117,7 @@ function iniciarContador(proximoJogo){
 
                 <div class="equipas">
                     ${jogo.casa}
-                    <br>Vs<br>
+                    <br>VS<br>
                     ${jogo.fora}
                 </div>
 
@@ -88,42 +125,18 @@ function iniciarContador(proximoJogo){
                 <div class="info">⏰ ${jogo.hora}</div>
                 <div class="info">📍 ${jogo.local}</div>
 
-                ${jogo.resultado ? `
-                    <div class="resultado">${jogo.resultado}</div>
-                ` : `
-                    <div class="info">🔜 Por disputar</div>
-                `}
+                ${
+                    jogo.resultado
+                    ? `<div class="resultado">${jogo.resultado}</div>`
+                    : `<div class="info">🔜 Por disputar</div>`
+                }
 
                 <button onclick="toggleDetalhes(${jogo.jornada})">
                     Ver Detalhes
                 </button>
 
                 <div class="detalhes" id="detalhes-${jogo.jornada}">
-                
+
                     <p><strong>Convocados:</strong></p>
                     <ul>
-                        ${jogo.convocados.map(c => `<li>${c}</li>`).join("")}
-                    </ul>
-
-                    <br>
-
-                    <p><strong>Marcadores:</strong></p>
-                    <ul>
-                        ${jogo.marcadores.map(m => `<li>⚽ ${m}</li>`).join("")}
-                    </ul>
-
-                </div>
-
-            </div>
-        `;
-    });
-
-    document.getElementById("listaJornadas").innerHTML = html;
-});
-
-function toggleDetalhes(id){
-
-    const div = document.getElementById(`detalhes-${id}`);
-
-    div.classList.toggle("active");
-}
+    
