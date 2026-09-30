@@ -3,12 +3,12 @@
     "jornada": 1,
     "casa": "GUS",
     "fora": "GDC Bairro St. Antonio",
-    "data": "2026-10-03",
+    "data": "2026-09-30",
     "hora": "11:00",
     "local": "Estádio 1º Maio",
-    "resultado": "",
-    "convocados": [],
-    "marcadores": []
+    "resultado": "3-0",
+    "convocados": [Kiko, Manel, Simao],
+    "marcadores": [Manel 31, Manel 45]
   },
   {
     "jornada": 2,
