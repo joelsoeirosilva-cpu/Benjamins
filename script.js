@@ -3,6 +3,44 @@ fetch("jogos.json")
 .then(jogos => {
 
     const proximoJogo = jogos.find(j => !j.resultado);
+    if(proximoJogo){
+
+    const dataJogo = new Date(
+        `${proximoJogo.data}T${proximoJogo.hora}:00`
+    );
+
+    function atualizarContador(){
+
+        const agora = new Date();
+        const diferenca = dataJogo - agora;
+
+        if(diferenca <= 0){
+
+            document.getElementById("countdown").innerHTML =
+                "⚽ O jogo já começou!";
+            return;
+        }
+
+        const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+
+        const horas = Math.floor(
+            (diferenca % (1000 * 60 * 60 * 24))
+            / (1000 * 60 * 60)
+        );
+
+        const minutos = Math.floor(
+            (diferenca % (1000 * 60 * 60))
+            / (1000 * 60)
+        );
+
+        document.getElementById("countdown").innerHTML =
+            `${dias} dias • ${horas} horas • ${minutos} minutos`;
+    }
+
+    atualizarContador();
+
+    setInterval(atualizarContador, 60000);
+}
 
     if(proximoJogo){
 
