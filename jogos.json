@@ -1,19 +1,19 @@
 [
   {
     "jornada": 1,
-    "casa": "Juventude SC",
-    "fora": "GUS Sub10 B",
-    "data": "03/10/2026",
-    "hora": "10:30",
-    "local": "Complexo Desportivo",
+    "casa": "GUS",
+    "fora": "Bairro St. Antonio",
+    "data": "2026-10-03",
+    "hora": "11:00",
+    "local": "Estádio 1º Maio",
     "resultado": "",
     "convocados": [],
     "marcadores": []
   },
   {
     "jornada": 2,
-    "casa": "GUS Sub10 B",
-    "fora": "Equipa 2",
+    "casa": "",
+    "fora": "",
     "data": "",
     "hora": "",
     "local": "",
@@ -23,11 +23,11 @@
   },
   {
     "jornada": 3,
-    "casa": "Equipa 3",
-    "fora": "GUS Sub10 B",
-    "data": "",
-    "hora": "",
-    "local": "",
+    "casa": "Juventude",
+    "fora": "GUS",
+    "data": "2026-10-17",
+    "hora": "10:30",
+    "local": "Évora",
     "resultado": "",
     "convocados": [],
     "marcadores": []
