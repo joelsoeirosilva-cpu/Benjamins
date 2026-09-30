@@ -130,5 +130,12 @@ li{
     font-size:.8rem;
 }
 
+.countdown-inline{
+    text-align:center;
+    color:#f1c40f;
+    font-weight:bold;
+    font-size:1.1rem;
+    margin:10px 0 15px 0;
+}
 
 
