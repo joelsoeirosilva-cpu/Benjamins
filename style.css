@@ -140,10 +140,9 @@ li{
 
 .separador {
     width: 80%;
-    height: 2px;
     margin: 40px auto;
-    background: #f1c40f;
-    box-shadow: 0 0 8px #f1c40f;
+    border-top: 2px solid #f1c40f;
 }
+
 
 
