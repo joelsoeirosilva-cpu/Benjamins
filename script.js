@@ -51,13 +51,7 @@ fetch("jogos.json")
                 </button>
 
                 <div class="detalhes" id="detalhes-${jogo.jornada}">
-
-                    <p><strong>Local:</strong> ${jogo.local}</p>
-
-                    <p><strong>Concentração:</strong> ${jogo.concentracao}</p>
-
-                    <br>
-
+                
                     <p><strong>Convocados:</strong></p>
                     <ul>
                         ${jogo.convocados.map(c => `<li>${c}</li>`).join("")}
