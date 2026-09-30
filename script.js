@@ -82,7 +82,7 @@ function atualizarContador() {
                     <div class="info">📍 ${proximoJogo.local}</div>
 
                 </div>
-            ;
+            `;
             atualizarContador();
 setInterval(atualizarContador, 1000);
         }
