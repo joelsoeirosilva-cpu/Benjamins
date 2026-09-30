@@ -115,9 +115,33 @@ li{
     text-align:center;
 }
 
-#countdown{
-    margin-top:15px;
-    font-size:1.5rem;
+.contador-jogo{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    margin:20px 0;
+}
+
+.contador-item{
+    flex:1;
+    background:#0f0f0f;
+    border:1px solid #333;
+    border-radius:10px;
+    text-align:center;
+    padding:10px;
+}
+
+.contador-item span{
+    display:block;
+    font-size:1.8rem;
     font-weight:bold;
     color:#f1c40f;
 }
+
+.contador-item small{
+    color:#999;
+    font-size:.7rem;
+}
+
+
+
