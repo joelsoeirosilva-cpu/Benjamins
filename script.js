@@ -11,9 +11,9 @@ fetch("jogos.json")
                 <h3>Jornada ${proximoJogo.jornada}</h3>
 
                 <div class="equipas">
-                    ${proximoJogo.adversario}
+                    ${proximoJogo.casa}
                     <br>VS<br>
-                    GUS SUB10 B
+                    ${proximoJogo.fora}
                 </div>
 
                 <div class="info">📅 ${proximoJogo.data}</div>
