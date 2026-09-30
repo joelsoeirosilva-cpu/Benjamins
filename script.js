@@ -154,11 +154,7 @@ function formatarData(dataString) {
 
     if (!dataString) return "";
 
-    const data = new Date(dataString);
+    const partes = dataString.split("-");
 
-    return data.toLocaleDateString("pt-PT", {
-        day: "2-digit",
-        month: "2-digit",
-        year: "numeric"
-    });
+    return `${partes[2]}/${partes[1]}/${partes[0]}`;
 }
