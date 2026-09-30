@@ -41,6 +41,7 @@ fetch("jogos.json")
 
                 <div class="info">📅 ${jogo.data}</div>
                 <div class="info">⏰ ${jogo.hora}</div>
+                <div class="info">📍 ${jogo.local}</div>
 
                 ${jogo.resultado ? `
                     <div class="resultado">${jogo.resultado}</div>
