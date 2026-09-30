@@ -38,29 +38,17 @@ function atualizarContador() {
     const minutos = Math.floor((diferenca / (1000 * 60)) % 60);
     const segundos = Math.floor((diferenca / 1000) % 60);
 
-    document.getElementById("countdown").innerHTML = `
-        <div class="countdown-container">
-            <div class="count-box">
-                <span>${dias}</span>
-                <small>DIAS</small>
-            </div>
-
-            <div class="count-box">
-                <span>${horas}</span>
-                <small>HORAS</small>
-            </div>
-
-            <div class="count-box">
-                <span>${minutos}</span>
-                <small>MIN</small>
-            </div>
-
-            <div class="count-box">
-                <span>${segundos}</span>
-                <small>SEG</small>
-            </div>
-        </div>
-    `;
+document.getElementById("countdown").innerHTML = `
+    <div class="countdown-inline">
+        ${dias} DIAS
+        &nbsp;&nbsp;
+        ${horas} HORAS
+        &nbsp;&nbsp;
+        ${minutos} MIN
+        &nbsp;&nbsp;
+        ${segundos} SEG
+    </div>
+`;
 }
 
 
