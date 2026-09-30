@@ -63,8 +63,7 @@ function atualizarContador() {
     `;
 }
 
-atualizarContador();
-setInterval(atualizarContador, 1000);
+
             document.getElementById("proximoJogo").innerHTML = `
                 <div class="next-game-card">
 
@@ -83,7 +82,9 @@ setInterval(atualizarContador, 1000);
                     <div class="info">📍 ${proximoJogo.local}</div>
 
                 </div>
-            `;
+            ;
+            atualizarContador();
+setInterval(atualizarContador, 1000);
         }
 
         let html = "";
