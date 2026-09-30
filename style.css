@@ -142,13 +142,8 @@ li{
     width: 80%;
     height: 2px;
     margin: 40px auto;
-    background: linear-gradient(
-        to right,
-        transparent,
-        #f1c40f,
-        #f1c40f,
-        transparent
-    );
+    background: #f1c40f;
+    box-shadow: 0 0 8px #f1c40f;
 }
 
 
