@@ -19,7 +19,6 @@ fetch("jogos.json")
                 <div class="info">📅 ${proximoJogo.data}</div>
                 <div class="info">⏰ ${proximoJogo.hora}</div>
                 <div class="info">📍 ${proximoJogo.local}</div>
-                <div class="info">👥 Concentração: ${proximoJogo.concentracao}</div>
             </div>
         `;
     }
