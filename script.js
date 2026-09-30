@@ -10,8 +10,16 @@ fetch("jogos.json")
 
         if (proximoJogo) {
 
-            const dataJogo = new Date(
-    `${proximoJogo.data}T${proximoJogo.hora}:00`
+    const [ano, mes, dia] = proximoJogo.data.split("-");
+const [hora, minuto] = proximoJogo.hora.split(":");
+
+const dataJogo = new Date(
+    ano,
+    mes - 1,
+    dia,
+    hora,
+    minuto,
+    0
 );
 
 function atualizarContador() {
