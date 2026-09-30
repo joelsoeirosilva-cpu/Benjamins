@@ -106,31 +106,28 @@ li{
     margin-bottom:5px;
 }
 
-.countdown-container{
+#countdown{
     display:flex;
-    gap:10px;
-    margin-bottom:12px;
-}
-
-.count-box{
-    flex:1;
-    background:#171717;
-    border:1px solid #333;
-    border-radius:12px;
-    padding:10px;
-    text-align:center;
-}
-
-.count-box span{
-    display:block;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:15px;
     color:#f1c40f;
-    font-size:1.8rem;
     font-weight:bold;
 }
 
-.count-box small{
-    color:#999;
-    font-size:.75rem;
+#countdown .time{
+    text-align:center;
+}
+
+#countdown .value{
+    display:block;
+    font-size:1.6rem;
+    line-height:1;
+}
+
+#countdown .label{
+    display:block;
+    font-size:.8rem;
 }
 
 
