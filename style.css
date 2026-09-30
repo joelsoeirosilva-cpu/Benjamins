@@ -106,41 +106,31 @@ li{
     margin-bottom:5px;
 }
 
-.countdown-card{
-    background:#181818;
-    border-left:5px solid #f1c40f;
-    border-radius:15px;
-    padding:20px;
-    margin:20px 0;
-    text-align:center;
-}
-
-.contador-jogo{
+.countdown-container{
     display:flex;
-    justify-content:space-between;
     gap:10px;
-    margin:20px 0;
+    margin-bottom:12px;
 }
 
-.contador-item{
+.count-box{
     flex:1;
-    background:#0f0f0f;
+    background:#171717;
     border:1px solid #333;
-    border-radius:10px;
-    text-align:center;
+    border-radius:12px;
     padding:10px;
+    text-align:center;
 }
 
-.contador-item span{
+.count-box span{
     display:block;
+    color:#f1c40f;
     font-size:1.8rem;
     font-weight:bold;
-    color:#f1c40f;
 }
 
-.contador-item small{
+.count-box small{
     color:#999;
-    font-size:.7rem;
+    font-size:.75rem;
 }
 
 
