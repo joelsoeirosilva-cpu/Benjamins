@@ -7,7 +7,18 @@
     "hora": "11:00",
     "local": "Estádio 1º Maio",
     "resultado": "",
-    "convocados": [],
+    "convocados": [
+      "Afonso Ponte",
+      "Artur Gregorio", 
+      "Duarte Ferreira", 
+      "Felipe Roque", 
+      "Guilherme Mestrinho", 
+      "Salvador Mira", 
+      "Simão Carapinha", 
+      "Tomás Bengalinha", 
+      "Vasco Mendes", 
+      "Vasco Soares"
+    ],
     "marcadores": []
   },
   {
