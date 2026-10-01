@@ -150,6 +150,10 @@ li{
     color:white;
 }
 
+.detalhes a{
+    text-decoration:none;
+}
+
 .btn-video{
     width:100%;
     background:#e74c3c;
