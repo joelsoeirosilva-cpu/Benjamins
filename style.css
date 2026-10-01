@@ -175,9 +175,6 @@ li{
 .secao-expandivel.active{
     display:block;
 }
-.lista-marcadores{
-margin-bottom: 20px;
-}
 
 .btn-convocados{
     width:100%;
@@ -196,7 +193,7 @@ margin-bottom: 20px;
     color:white;
     border:none;
     padding:12px;
-    margin-top:15px;
+    margin-top:10px;
     border-radius:8px;
     font-weight:bold;
 }
