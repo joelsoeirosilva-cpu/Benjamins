@@ -166,7 +166,7 @@ ${
     `
     : `
         <div class="info">
-            🔜 Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado
+            🔜 Ainda não existem dados para este jogo. Consulte esta área mais tarde. Obrigado
         </div>
     `
 }
