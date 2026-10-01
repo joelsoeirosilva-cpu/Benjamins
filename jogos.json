@@ -21,9 +21,7 @@
       "Vasco Mendes", 
       "Vasco Soares"
     ],
-    "marcadores": [],
-    "foto":,
-    "video":
+    "marcadores": []
   },
   {
     "jornada": 2,
@@ -34,9 +32,7 @@
     "local": "",
     "resultado": "",
     "convocados": [],
-    "marcadores": [],
-    "foto":,
-    "video":
+    "marcadores": []
   },
   {
     "jornada": 3,
@@ -47,9 +43,7 @@
     "local": "Complexo Desportivo Sanches de Miranda, Évora",
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
-    "marcadores": [],
-    "foto":,
-    "video":
+    "marcadores": []
   },
   {
     "jornada": 4,
@@ -60,9 +54,7 @@
     "local": "Estádio 1º Maio",
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
-    "marcadores": [],
-    "foto":,
-    "video":
+    "marcadores": []
   },
   {
     "jornada": 5,
@@ -73,9 +65,7 @@
     "local": "Campo Jose Eduardo Abreu",
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
-    "marcadores": [],
-    "foto":,
-    "video":
+    "marcadores": []
   },
   {
     "jornada": 6,
@@ -86,9 +76,7 @@
     "local": "Campo do Bairro de Santo Antonio",
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
-    "marcadores": [],
-    "foto":,
-    "video":
+    "marcadores": []
   },
   {
     "jornada": 7,
@@ -99,9 +87,7 @@
     "local": "",
     "resultado": "",
     "convocados": [],
-    "marcadores": [],
-    "foto":,
-    "video":
+    "marcadores": []
   },
   {
     "jornada": 8,
@@ -112,9 +98,7 @@
     "local": "Estádio 1º Maio",
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
-    "marcadores": [],
-    "foto":,
-    "video":
+    "marcadores": []
   },
   {
     "jornada": 9,
@@ -125,9 +109,7 @@
     "local": "Academia Lusitano Ginasio Clube",
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
-    "marcadores": [],
-    "foto":,
-    "video":
+    "marcadores": []
   },
   {
     "jornada": 10,
@@ -138,8 +120,6 @@
     "local": "Estádio 1º Maio",
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
-    "marcadores": [],
-    "foto":,
-    "video":
+    "marcadores": []
   }
 ]
