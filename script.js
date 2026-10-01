@@ -132,14 +132,12 @@ ${(jogo.marcadores || [])
 <br>
 
 ${jogo.foto ? `
-    <a href="${jogo.foto}" target="_blank">
-Jogo</button>
+    <a href="${jogo.foto}" target="_blankdo Jogo</button>
     </a>
 ` : ""}
 
 ${jogo.video ? `
-    <a hrefvideo}
-        <button>🎥 Vídeo do Jogo</button>
+    <a href="${jogo.video}" target="_blank do Jogo</button>
     </a>
 ` : ""}
 
