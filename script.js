@@ -132,12 +132,14 @@ ${(jogo.marcadores || [])
 <br>
 
 ${jogo.foto ? `
-      <button class="btn-foto">📸 Foto do Jogo</button>
+    <ajogo.foto}
+        <button class="btn-foto">📸 Ver Foto do Jogo</button>
     </a>
 ` : ""}
 
 ${jogo.video ? `
-        <button class="btn-video">🎥 Vídeo do Jogo</button>
+    <ajogo.video}
+        <button class="btn-video">🎥 Ver Vídeo do Jogo</button>
     </a>
 ` : ""}
 
