@@ -144,20 +144,22 @@ li{
     border-top: 2px solid #f1c40f;
 }
 
+.detalhes a{
+    text-decoration:none;
+}
+
 .btn-foto{
     width:100%;
     background:#3498db;
     color:white;
-}
-
-.detalhes a{
-    text-decoration:none;
+    margin-top:8px;
 }
 
 .btn-video{
     width:100%;
     background:#e74c3c;
     color:white;
+    margin-top:8px;
 }
 
 .btn-foto:hover,
