@@ -159,6 +159,7 @@ onclick="toggleMarcadores(${jogo.jornada})">
     </ul>
 
 </div>
+</div>
                 </div>
             `;
         });
