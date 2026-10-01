@@ -129,6 +129,7 @@ onclick="window.open('${jogo.video}', '_blank')">
 ` : ""}
 
 <br>
+<br>
 
                         <p><strong>Convocados:</strong></p>
 
