@@ -128,7 +128,9 @@ onclick="window.open('${jogo.video}', '_blank')">
 </button>
 ` : ""}
 
-<button onclick="toggleConvocados(${jogo.jornada})">
+<button 
+class="btn-convocados"
+onclick="toggleConvocados(${jogo.jornada})">
     👥 Convocados
 </button>
 
@@ -142,7 +144,9 @@ onclick="window.open('${jogo.video}', '_blank')">
 
 </div>
 
-<button onclick="toggleMarcadores(${jogo.jornada})">
+<button 
+class="btn-marcadores"
+onclick="toggleMarcadores(${jogo.jornada})">
     ⚽ Marcadores
 </button>
 
@@ -155,9 +159,11 @@ onclick="window.open('${jogo.video}', '_blank')">
     </ul>
 
 </div>
+<br><br>
                 </div>
             `;
         });
+        
 
         document.getElementById("listaJornadas").innerHTML = html;
     });
