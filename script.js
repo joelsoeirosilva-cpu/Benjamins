@@ -129,6 +129,19 @@ ${(jogo.marcadores || [])
     .map(m => `<li>⚽ ${m}</li>`)
     .join("")}
                         </ul>
+<br>
+
+${jogo.foto ? `
+    ${jogo.foto}
+        <button>📸 Foto do Jogo</button>
+    </a>
+` : ""}
+
+${jogo.video ? `
+    ${jogo.video}
+        <button>🎥 Vídeo do Jogo</button>
+    </a>
+` : ""}
 
                     </div>
 
