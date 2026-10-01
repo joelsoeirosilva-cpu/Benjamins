@@ -137,7 +137,6 @@ ${jogo.foto ? `
 ` : ""}
 
 ${jogo.video ? `
-    ${jogo.video}
         <button class="btn-video">🎥 Vídeo do Jogo</button>
     </a>
 ` : ""}
