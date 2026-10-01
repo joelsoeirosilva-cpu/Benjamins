@@ -132,15 +132,19 @@ ${(jogo.marcadores || [])
 <br>
 
 ${jogo.foto ? `
-    <ajogo.foto}
-        <button class="btn-foto">📸 Ver Foto do Jogo</button>
-    </a>
+<button
+class="btn-foto"
+onclick="window.open('${jogo.foto}', '_blank')">
+📸 Foto
+</button>
 ` : ""}
 
 ${jogo.video ? `
-    <ajogo.video}
-        <button class="btn-video">🎥 Ver Vídeo do Jogo</button>
-    </a>
+<button
+class="btn-video"
+onclick="window.open('${jogo.video}', '_blank')">
+🎥 Vídeo
+</button>
 ` : ""}
 
                     </div>
