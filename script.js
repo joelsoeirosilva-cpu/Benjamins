@@ -128,37 +128,49 @@ onclick="window.open('${jogo.video}', '_blank')">
 </button>
 ` : ""}
 
-<button 
-class="btn-convocados"
-onclick="toggleConvocados(${jogo.jornada})">
-    👥 Convocados
-</button>
+${
+    (jogo.convocados?.length || 0) > 0 ||
+    (jogo.marcadores?.length || 0) > 0
+    ? `
+        <button
+        class="btn-convocados"
+        onclick="toggleConvocados(${jogo.jornada})">
+            👥 Convocados
+        </button>
 
-<div class="secao-expandivel" id="convocados-${jogo.jornada}">
+        <div class="secao-expandivel" id="convocados-${jogo.jornada}">
 
-    <ul>
-        ${(jogo.convocados || [])
-            .map(c => `<li>${c}</li>`)
-            .join("")}
-    </ul>
+            <ul>
+                ${(jogo.convocados || [])
+                    .map(c => `<li>${c}</li>`)
+                    .join("")}
+            </ul>
 
-</div>
+        </div>
 
-<button 
-class="btn-marcadores"
-onclick="toggleMarcadores(${jogo.jornada})">
-    ⚽ Marcadores
-</button>
+        <button
+        class="btn-marcadores"
+        onclick="toggleMarcadores(${jogo.jornada})">
+            ⚽ Marcadores
+        </button>
 
-<div class="secao-expandivel" id="marcadores-${jogo.jornada}">
+        <div class="secao-expandivel" id="marcadores-${jogo.jornada}">
 
-    <ul>
-        ${(jogo.marcadores || [])
-            .map(m => `<li>⚽ ${m}</li>`)
-            .join("")}
-    </ul>
+            <ul>
+                ${(jogo.marcadores || [])
+                    .map(m => `<li>⚽ ${m}</li>`)
+                    .join("")}
+            </ul>
 
-</div>
+        </div>
+    `
+    : `
+        <div class="info">
+            🔜 Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado
+        </div>
+    `
+}
+``
 </div>
                 </div>
             `;
