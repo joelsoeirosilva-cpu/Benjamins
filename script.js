@@ -143,18 +143,19 @@ onclick="window.open('${jogo.video}', '_blank')">
 </div>
 
 
-${(jogo.marcadores || [])
-    .map(m => `<li>⚽ ${m}</li>`)
-    .join("")}
-                        </ul>
+<button onclick="toggleMarcadores(${jogo.jornada})">
+    ⚽ Marcadores
+</button>
 
+<div class="secao-expandivel" id="marcadores-${jogo.jornada}">
 
+    <ul>
+        ${(jogo.marcadores || [])
+            .map(m => `<li>⚽ ${m}</li>`)
+            .join("")}
+    </ul>
 
-
-                    </div>
-
-                </div>
-            `;
+</div>
         });
 
         document.getElementById("listaJornadas").innerHTML = html;
