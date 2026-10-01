@@ -22,8 +22,8 @@
       "Vasco Soares"
     ],
     "marcadores": [],
-    "foto":,
-    "video":
+    "foto":"http://",
+    "video":""
   },
   {
     "jornada": 2,
@@ -35,8 +35,8 @@
     "resultado": "",
     "convocados": [],
     "marcadores": [],
-    "foto":,
-    "video":
+    "foto":"",
+    "video":""
   },
   {
     "jornada": 3,
@@ -48,8 +48,8 @@
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
     "marcadores": [],
-    "foto":,
-    "video":
+    "foto":"",
+    "video":""
   },
   {
     "jornada": 4,
@@ -61,8 +61,8 @@
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
     "marcadores": [],
-    "foto":,
-    "video":
+    "foto":"",
+    "video":""
   },
   {
     "jornada": 5,
@@ -74,8 +74,8 @@
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
     "marcadores": [],
-    "foto":,
-    "video":
+    "foto":"",
+    "video":""
   },
   {
     "jornada": 6,
@@ -87,8 +87,8 @@
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
     "marcadores": [],
-    "foto":,
-    "video":
+    "foto":"",
+    "video":""
   },
   {
     "jornada": 7,
@@ -100,8 +100,8 @@
     "resultado": "",
     "convocados": [],
     "marcadores": [],
-    "foto":,
-    "video":
+    "foto":"",
+    "video":""
   },
   {
     "jornada": 8,
@@ -113,8 +113,8 @@
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
     "marcadores": [],
-    "foto":,
-    "video":
+    "foto":"",
+    "video":""
   },
   {
     "jornada": 9,
@@ -126,8 +126,8 @@
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
     "marcadores": [],
-    "foto":,
-    "video":
+    "foto":"",
+    "video":""
   },
   {
     "jornada": 10,
@@ -139,7 +139,7 @@
     "resultado": "",
     "convocados": ["Ainda não existe convocatória para este jogo. Consulte esta área mais tarde. Obrigado."],
     "marcadores": [],
-    "foto":,
-    "video":
+    "foto":"",
+    "video":""
   }
 ]
