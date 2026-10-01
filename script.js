@@ -142,17 +142,19 @@ onclick="window.open('${jogo.video}', '_blank')">
 
 </div>
 
+<button onclick="toggleMarcadores(${jogo.jornada})">
+    ⚽ Marcadores
+</button>
 
-${(jogo.marcadores || [])
-    .map(m => `<li>⚽ ${m}</li>`)
-    .join("")}
-                        </ul>
+<div class="secao-expandivel" id="marcadores-${jogo.jornada}">
 
+    <ul>
+        ${(jogo.marcadores || [])
+            .map(m => `<li>⚽ ${m}</li>`)
+            .join("")}
+    </ul>
 
-
-
-                    </div>
-
+</div>
                 </div>
             `;
         });
