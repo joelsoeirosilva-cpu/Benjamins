@@ -128,23 +128,21 @@ onclick="window.open('${jogo.video}', '_blank')">
 </button>
 ` : ""}
 
-<br>
-<br>
+<button onclick="toggleConvocados(${jogo.jornada})">
+    👥 Convocados
+</button>
 
-                        <p><strong>Convocados:</strong></p>
+<div class="secao-expandivel" id="convocados-${jogo.jornada}">
 
-                        <ul>
-                        
-${(jogo.convocados || [])
-    .map(c => `<li>${c}</li>`)
-    .join("")}
-                        </ul>
+    <ul>
+        ${(jogo.convocados || [])
+            .map(c => `<li>${c}</li>`)
+            .join("")}
+    </ul>
 
-                        <br>
+</div>
 
-                        <p><strong>Marcadores:</strong></p>
 
-                        <ul>
 ${(jogo.marcadores || [])
     .map(m => `<li>⚽ ${m}</li>`)
     .join("")}
@@ -180,4 +178,20 @@ function formatarData(dataString) {
     const partes = dataString.split("-");
 
     return `${partes[2]}/${partes[1]}/${partes[0]}`;
+}
+
+function toggleConvocados(jornada){
+
+    document
+        .getElementById(`convocados-${jornada}`)
+        .classList
+        .toggle("active");
+}
+
+function toggleMarcadores(jornada){
+
+    document
+        .getElementById(`marcadores-${jornada}`)
+        .classList
+        .toggle("active");
 }
