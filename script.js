@@ -112,11 +112,7 @@ setInterval(atualizarContador, 1000);
 
                     <div class="detalhes" id="detalhes-${jogo.jornada}">
 
-                        <p><strong>Convocados:</strong></p>
-
-                        <ul>
-
-${jogo.foto ? `
+                    ${jogo.foto ? `
 <button
 class="btn-foto"
 onclick="window.open('${jogo.foto}', '_blank')">
@@ -133,6 +129,10 @@ onclick="window.open('${jogo.video}', '_blank')">
 ` : ""}
 
 <br>
+
+                        <p><strong>Convocados:</strong></p>
+
+                        <ul>
                         
 ${(jogo.convocados || [])
     .map(c => `<li>${c}</li>`)
