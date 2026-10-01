@@ -167,4 +167,11 @@ li{
     opacity:0.9;
 }
 
+.secao-expandivel{
+    display:none;
+    margin-top:10px;
+}
 
+.secao-expandivel.active{
+    display:block;
+}
