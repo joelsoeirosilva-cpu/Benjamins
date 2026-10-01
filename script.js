@@ -132,7 +132,7 @@ ${(jogo.marcadores || [])
 <br>
 
 ${jogo.foto ? `
-    <a href="${jogo.foto}" targetclass="btn-foto">📸 Foto do Jogo</button>
+      <button class="btn-foto">📸 Foto do Jogo</button>
     </a>
 ` : ""}
 
