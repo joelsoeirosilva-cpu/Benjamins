@@ -144,5 +144,21 @@ li{
     border-top: 2px solid #f1c40f;
 }
 
+.btn-foto{
+    width:100%;
+    background:#3498db;
+    color:white;
+}
+
+.btn-video{
+    width:100%;
+    background:#e74c3c;
+    color:white;
+}
+
+.btn-foto:hover,
+.btn-video:hover{
+    opacity:0.9;
+}
 
 
