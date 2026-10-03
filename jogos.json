@@ -6,7 +6,7 @@
     "data": "2026-10-03",
     "hora": "11:00",
     "local": "Estádio 1º Maio",
-    "resultado": "",
+    "resultado": "4-3",
     "convocados": [
       "Afonso Ponte",
       "Artur Gregorio", 
@@ -21,8 +21,12 @@
       "Vasco Mendes", 
       "Vasco Soares"
     ],
-    "marcadores": [],
-    "foto":"",
+    "marcadores": [
+      "Salvador Mira",
+      "Filipe Roque",
+      "Vasco Soares (2)"
+    ],
+    "foto":"https://ibb.co/twvPGH3p",
     "video":""
   },
   {
