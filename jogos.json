@@ -50,7 +50,20 @@
     "hora": "11:00",
     "local": "Complexo Desportivo Sanches de Miranda, Évora",
     "resultado": "",
-    "convocados": [],
+    "convocados": [
+      "Afonso Ponte",
+      "Artur Gregorio", 
+      "Dinis Valerio",
+      "Duarte Ferreira", 
+      "Filipe Roque", 
+      "Francisco Lavado",
+      "Frederico Roupa", 
+      "Gabriel Peguicha", 
+      "Guilherme Mestrinho", 
+      "Manel Silva",
+      "Simão Carapinha", 
+      "Vasco Soares"
+    ],
     "marcadores": [],
     "foto":"",
     "video":""
