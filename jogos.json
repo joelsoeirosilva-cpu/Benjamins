@@ -49,7 +49,7 @@
     "data": "2026-10-17",
     "hora": "11:00",
     "local": "Complexo Desportivo Sanches de Miranda, Évora",
-    "resultado": "",
+    "resultado": "8-2",
     "convocados": [
       "Afonso Ponte",
       "Artur Gregorio", 
@@ -64,7 +64,10 @@
       "Simão Carapinha", 
       "Vasco Soares"
     ],
-    "marcadores": [],
+    "marcadores": [
+      "Afonso Ponte",
+      "Duarte Ferreira"
+    ],
     "foto":"",
     "video":""
   },
