@@ -109,7 +109,7 @@
     "data": "2026-10-31",
     "hora": "11:00",
     "local": "Campo Jose Eduardo Abreu",
-    "resultado": "",
+    "resultado": "1-8",
     "convocados": [
       "Afonso Casquinha",
       "Artur Gregorio", 
@@ -124,7 +124,14 @@
       "Simão Carapinha",
       "Vasco Mendes"
     ],
-    "marcadores": [],
+    "marcadores": [
+      "Simão Carapinha",
+      "Frederico Roupa", 
+      "Afonso Casquinha (2)",
+      "Duarte Ferreira", 
+      "Vasco Mendes", 
+      "Guilherme Mestrinho"
+    ],
     "foto":"",
     "video":""
   },
